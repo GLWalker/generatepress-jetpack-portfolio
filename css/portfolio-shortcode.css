@@ -1,0 +1,128 @@
+.jetpack-portfolio-shortcode {
+	clear: both;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.portfolio-entry {
+	float: left;
+	margin: 0 0 3em;
+	padding: 0;
+	width: 100%;
+  border:1px solid #333;
+}
+
+/* Column setting */
+.portfolio-entry-column-1 {
+	width: 100%;
+}
+
+.portfolio-entry-column-2 {
+	margin-right: 4%;
+	width: 48%;
+}
+
+.portfolio-entry-column-3 {
+	margin-right: 3.5%;
+	width: 31%;
+}
+
+.portfolio-entry-column-4 {
+	margin-right: 3%;
+	width: 22%;
+}
+
+.portfolio-entry-column-5 {
+	margin-right: 2.5%;
+	width: 18%;
+}
+
+.portfolio-entry-column-6 {
+	margin-right: 2%;
+	width: 15%;
+}
+.portfolio-entry-first-item-row {
+	clear: both;
+}
+.portfolio-entry-last-item-row {
+	margin-right: 0;
+}
+
+@media screen and (max-width:768px) {
+	.portfolio-entry-mobile-first-item-row{
+		margin-right: 4%;
+		width: 48%;
+		clear:both;
+	}
+	.portfolio-entry-first-item-row {
+		clear:none;
+	}
+	.portfolio-entry-mobile-last-item-row{
+		width: 48%;
+		margin-right: 0;
+	}
+}
+/* Entry Header */
+.portfolio-entry-header {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.inside-portfolio {
+  padding:10px;
+}
+
+.portfolio-featured-image {
+display : block;
+position : relative;
+overflow : hidden;
+}
+
+.portfolio-featured-image img {
+	max-width : 100%;
+    height : auto;
+}
+
+.portfolio-featured-image a:hover img, .portfolio-featured-image a:focus img, .portfolio-featured-image a:active img {
+filter : grayscale(100%);
+}
+.portfolio-featured-image .portfolio-thumbnail-overlay {
+background : rgba(0, 0, 0, 0.2);
+height : 100%;
+width : 100%;
+position : absolute;
+z-index : 10;
+opacity : 0;
+background-clip : content-box;
+transition : all 0.3s ease-in;
+}
+.portfolio-featured-image .portfolio-thumbnail-overlay .fa {
+position : absolute;
+margin : 0 auto;
+left : 0;
+right : 0;
+top : 20%;
+font-size : 60px !important ;
+text-align : center;
+color : rgba(255, 255, 255, 0.9);
+text-shadow : 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+.portfolio-featured-image:hover .portfolio-thumbnail-overlay {
+opacity : 1;
+}
+
+.portfolio-entry-title {
+font-size : 18px;
+text-align : center;
+margin : 0.75em auto 0;
+}
+/* entry-header / entry-summary / entry-meta */
+.portfolio-entry .entry-summary p, .portfolio-entry .entry-meta {
+margin : 0.75em auto 0;
+}
+
+.portfolio-entry .entry-header, .portfolio-entry .entry-summary {
+margin : 0 auto;
+}

@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+Portfolio Styles
+--------------------------------------------------------------*/
+.portfolio-wrapper.grid-container {
+padding-left : 0 !important ;
+padding-right : 0 !important ;
+}
+.jetpack-portfolio .inside-article.inside-portfolio {
+  padding:10px;
+}
+/* thumbnails */
+.jetpack-portfolio .portfolio-featured-image {
+display : inline-block;
+position : relative;
+overflow : hidden;
+}
+.jetpack-portfolio .portfolio-featured-image img {
+width : 100%;
+height : auto;
+}
+.jetpack-portfolio .portfolio-featured-image a:hover img, .jetpack-portfolio .portfolio-featured-image a:focus img, .jetpack-portfolio .portfolio-featured-image a:active img {
+filter : grayscale(100%);
+}
+.jetpack-portfolio .portfolio-thumbnail-overlay {
+background : rgba(0, 0, 0, 0.2);
+height : 100%;
+width : 100%;
+position : absolute;
+z-index : 10;
+opacity : 0;
+background-clip : content-box;
+transition : all 0.3s ease-in;
+}
+.jetpack-portfolio .portfolio-thumbnail-overlay .fa {
+position : absolute;
+margin : 0 auto;
+left : 0;
+right : 0;
+top : 20%;
+font-size : 60px !important ;
+text-align : center;
+color : rgba(255, 255, 255, 0.9);
+text-shadow : 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+.jetpack-portfolio .portfolio-featured-image:hover .portfolio-thumbnail-overlay {
+opacity : 1;
+}
+/* entry-header / entry-summary / entry-meta */
+.jetpack-portfolio .entry-header, .jetpack-portfolio .entry-summary p, .jetpack-portfolio .entry-meta {
+margin : 0.75em auto 0;
+}
+.jetpack-portfolio .entry-header h2 {
+font-size : 18px;
+text-align : center;
+}
+.jetpack-portfolio .entry-summary {
+margin : 0 auto;
+}
